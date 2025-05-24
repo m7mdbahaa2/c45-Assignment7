@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+}
+
+#scroll-button {
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    border-radius: 100%;
+}
+
+#home .links::after {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    width: 0%;
+    background-color: white;
+}
+#home .links:hover ::after {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    width: 100%;
+    background-color: white;
+}
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.493) 0% 100%), url(../images/hero-bg.jpg);
+    background-position: center;
+    background-size: cover;
+
+    .links li {
+        display: inline-block;
+        padding: 1rem;
+        font-weight: 700;
+    }
+}
+
+#services .head p::after {
+    content: " ";
+    border-bottom: 5px solid #0078FF;
+    width: 3%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.analytics {
+    background-image: linear-gradient(#0077ff97), url(../images/post-3.jpg);
+    /* height: 500px; */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+
+#work .wrapper .head p::after {
+    content: "";
+    border-bottom: 5px solid #0078FF;
+    width: 3%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#work .wrapper .cards .work-card {
+    overflow: hidden;
+}
+
+#work .wrapper .cards .work-card img {
+    transition: all 1s;
+}
+
+#work .wrapper .cards .work-card:hover img {
+    transform: scale(1.2);
+}
+
+#characters #characters-carousel {
+    background-image: linear-gradient(#0077ff97), url(../images/overlay-bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#characters #characters-carousel .carousel-indicators button {
+    height: 10px;
+    width: 10px;
+}
+
+
+#blog .blog-cards .card-footer a {
+    color: #1e1e1e;
+}
+
+#blog .blog-cards .card-footer a:hover {
+    color: #0078FF;
+}
+
+#blog .blog-cards .card-footer a img {
+    width: 30px;
+    height: 30px;
+}
+
+#blog .blog-cards .card-body button {
+    padding: .1rem 1rem;
+}
+
+
+#blog .head p::after {
+    content: "";
+    border-bottom: 5px solid #0078FF;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 3%;
+    transform: translateX(-50%);
+    padding-bottom: 5rem;
+}
+
+#contact {
+    background-image: linear-gradient(#0077ff97), url(../images/overlay-bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+
+#contact .get-in-touch #social-icons div {
+    border: 3px solid gray;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
